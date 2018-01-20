@@ -1,0 +1,1401 @@
+/** General Css **/
+
+body {
+	margin: 0;
+	font: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+
+
+/*for all button to not have a border */
+
+.ui-btn {
+	border: none !important;
+}
+
+
+/** header style for pages that use header **/
+
+.headerStyle {
+	width: 40%;
+	background-color: #1a936f;
+	height: 60px;
+}
+
+
+/*the back button of the header */
+
+.headerStyle a img {
+	width: 50px;
+	height: 35px;
+}
+
+
+/*the back button css */
+
+.headerStyle .ui-btn {
+	border: none !important;
+	background-color: #1a936f !important;
+}
+
+
+/*the back button visisted */
+
+.headerStyle .ui-btn:hover {
+	background-color: #1a936f;
+}
+
+
+/*to color the page  */
+
+.ui-page .ui-header {
+	background-color: #1a936f;
+	margin-top: -1px;
+}
+
+.ui-page .ui-header h1 {
+	color: #f3e9d2;
+	font-size: 30px;
+}
+
+
+/*Main body of the mainpage*/
+
+.ui-page {
+	background-color: #c6dabf;
+}
+
+
+/** Navigation Bar Css Design **/
+
+
+/* Setting the height for the button */
+
+#custom-navbar .ui-btn {
+	height: 50px;
+}
+
+
+/*Set image size in the navigation bar */
+
+#custom-navbar li a img {
+	height: 50px;
+}
+
+
+/*To set the color and border color for all the link */
+
+#custom-navbar li a {
+	color: #f3e9d2;
+	background-color: #1a936f;
+	border-color: #1a936f;
+	font-size: 12pt;
+	margin-bottom: 0;
+	padding-bottom: 25px;
+}
+
+
+/*To set the color for the first and last tab */
+
+#custom-navbar ul,
+li {
+	background-color: #1a936f;
+}
+
+
+/*Set the correct size to the navigation bar*/
+
+#custom-navbar .nav:not(:first-child):not(:last-child) {
+	width: 12% !important;
+	/* 10% for 8 tabs wide */
+	clear: none !important;
+	/* Prevent line break caused by ui-block-a */
+	border-color: #1a936f;
+}
+
+
+/*Set border for the third to the 6 element */
+
+#custom-navbar .nav:nth-child(n+2):nth-child(-n+6) {
+	border-right: 1px solid #114b5f;
+}
+
+
+/*Set border for the third to the 7 element */
+
+#custom-navbar .nav:nth-child(n+3):nth-child(-n+7) {
+	border-left: 1px solid #114b5f;
+}
+
+
+/*Set the correct size to the navigation bar */
+
+#custom-navbar .nav:first-child {
+	width: 20% !important;
+	/* 20% for 8 tabs wide */
+	clear: none !important;
+	/* Prevent line break caused by ui-block-a */
+	background-color: #1a936f;
+	border-color: #1a936f;
+}
+
+#custom-navbar li:first-child img {
+	height: 78%;
+	width: 78%;
+	padding-top: 1px;
+}
+
+
+/*Set the correct size to the navigation bar */
+
+#custom-navbar .nav:last-child {
+	width: 8% !important;
+	/* 20% for 8 tabs wide */
+	clear: none !important;
+	/* Prevent line break caused by ui-block-a*/
+	background-color: #1a936f;
+	border-color: #1a936f;
+}
+
+
+/*Set the color when the button being press */
+
+#custom-navbar ul li a.ui-btn-active {
+	background-color: #114b5f;
+	border-color: #114b5f;
+}
+
+
+/*Just a blue link */
+
+.blueLine {
+	height: 10px;
+	background-color: #114b5f;
+}
+
+
+/* Home page Layout*/
+
+.startpage-container {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+/*Main logo image css */
+
+.startpage-container img {
+	width: 70%;
+	height: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+/*Div containing the menu button */
+
+.menubutton {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+/*The image within the menu div */
+
+.menubutton img {
+	margin-top: 5%;
+	width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+
+/*To set the color of the button */
+
+.menubutton .ui-btn {
+	font-size: 15px;
+	background-color: #114c5f;
+	font-size: 20px;
+	color: #f3e9d2;
+}
+
+
+/*Change color of the visited link */
+
+.menubutton .ui-btn:visited {
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+.menubutton .ui-btn:hover {
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/** Css for the newsletter page **/
+
+
+/*The grid image within the first grid layout */
+
+.newsletterpage-container .ui-grid-a .ui-block-a img {
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+/*First layout */
+
+.newsletterpage-container .ui-grid-a .ui-block-a {
+	width: 40%;
+}
+
+.newsletterpage-container .ui-grid-a .ui-block-b {
+	width: 60%;
+}
+
+.newsletterpage-container .ui-grid-a .ui-block-b a {
+	background-color: #114c5f;
+	color: #f3e9d2;
+	text-decoration: none;
+	font-size: 18px;
+	width: 30%;
+	margin-top: 15%;
+}
+
+
+/*Css for the main content*/
+
+.newsletter-maincontent span {
+	font-style: italic;
+	font-size: 15px;
+	margin-top: -25px;
+}
+
+.newsletter-maincontent p {
+	font-size: 18px;
+}
+
+
+/*The error message for the email validation */
+
+.sendEmail-popup p {
+	font-size: 15px;
+	color: red;
+	padding: 5px 10px;
+	background-color: #f3e9d2;
+}
+
+
+/*Css for the font-size of the page for the second part */
+
+.titlenewsletter-sub {
+	margin-top: -2px;
+	font-size: 18px;
+}
+
+.newsletter-sub {
+	margin-top: -25px;
+	font-size: 15px;
+	font-style: italic;
+}
+
+
+/*The second grid layout */
+
+.newsletterpage-container .ui-grid-b {
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+/*First image */
+
+.newsletterpage-container .ui-grid-b .ui-block-a img {
+	width: 300px;
+	height: 200px;
+}
+
+
+/*Second image */
+
+.newsletterpage-container .ui-grid-b .ui-block-b img {
+	width: 300px;
+	height: 200px;
+}
+
+
+/*Third image */
+
+.newsletterpage-container .ui-grid-b .ui-block-c img {
+	width: 300px;
+	height: 200px;
+}
+
+
+/*popup container */
+
+.sendEmail-popup {
+	padding: 20px 30px;
+	background-color: #1a936f;
+
+	color: #f3e9d2;
+}
+
+
+/*textbox in the popup */
+
+.sendEmail-popup input {
+	width: 400px;
+}
+
+
+/* button in the popup */
+
+.sendEmail-popup .ui-btn {
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/** Login page css**/
+
+.loginpage-container {
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 100px;
+}
+
+
+/*The log in label */
+
+.loginpage-container label {
+	text-align: center;
+	background-color: #1a936f;
+	color: #f3e9d2;
+	font-size: 20px;
+	padding: 5px;
+	margin-top: 7%;
+	margin-bottom: -2%;
+}
+
+
+/*login button */
+
+.loginpage-container .ui-btn {
+	margin-top: 7%;
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/*login button css for visited */
+
+.loginpage-container .ui-btn:visited {
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/*login button for hover*/
+
+.loginpage-container .ui-btn:hover {
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/** Css for register **/
+
+.registerpage-container {
+	padding-top: 50px;
+	width: 55%;
+	margin-left: 27.5%;
+	margin-right: 27.5%;
+}
+
+.registerpage-container label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.registerpage-container .ui-btn {
+	margin-top: 5%;
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+
+/** Css for about us page **/
+
+
+/* Home page Layout*/
+
+.aboutus-container {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+/*Main logo image css */
+
+.aboutus-container img {
+	width: 60%;
+	height: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+/*css to make sure all the text is center */
+
+.aboutus-container {
+	text-align: center;
+}
+
+
+/*Set the size of all the text */
+
+.aboutus-container p {
+	font-size: 18px;
+}
+
+
+/** Css for account page **/
+
+.account-container {
+	width: 100%;
+	background-color: black;
+}
+
+
+/*Css for the score area of the page */
+
+.positioningOfScore {
+	width: 48%;
+	float: left;
+}
+
+.scoreContent {
+	width: 70%;
+	float: right;
+	margin-top: 180px;
+	text-align: center;
+}
+
+#noOfPoints {
+	padding: 10px 12px;
+	background-color: #1a936f;
+	font-size: 18px;
+	width: 50%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#nextRequirePoints {
+	padding: 10px 12px;
+	background-color: #1a936f;
+	font-size: 18px;
+	width: 50%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+/*Css for the line that will split the page */
+
+.verticleLine {
+	width: 0.5%;
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+	float: left;
+	height: 450px;
+	background-color: black;
+	margin-top: 40px;
+}
+
+
+/*Css for the account side of that page */
+
+.accountDetailPosition {
+	width: 48%;
+	float: left;
+}
+
+
+/*Account page form*/
+
+.accountForm {
+	width: 100%;
+}
+
+
+/*The input textbox of the page */
+
+.accountDetailPosition input[type=text] {
+	background-color: #f3e9d2;
+	border: 1px solid black;
+	font-size: 18px;
+	padding: 5px 10px;
+}
+
+
+/*The label of the account form*/
+
+.accountDetailPosition label {
+	font-size: 18px;
+}
+
+
+/*The structure of the account form */
+
+.accountFormStructure {
+	margin-top: 90px;
+	background-color: #c6dabf;
+	width: 80%;
+}
+
+
+/*The heading of the account form */
+
+.accountFormStructure h3 {
+	text-align: center;
+}
+
+
+/**Game page **/
+
+#searchGame-page .ui-content {
+	padding: 0 !important;
+	min-height: 100%;
+	margin-top: -60px;
+}
+
+
+/*Area where the list of POI will be display */
+.pointOfInterestArea {
+
+	margin-top: 43px;
+	padding-top: 10px;
+	margin-right: 0;
+	width: 40%;
+	min-height: 100%;
+	float: left;
+	background-color: #f3e9d2;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#displayListPOI {
+
+	margin: 0;
+	padding: 0;
+}
+
+#pointOfInterestList {
+
+	list-style-type: none;
+	padding: 0;
+
+
+}
+
+.pointOfInterestListItem {
+
+	background-color: #114c5f;
+	padding: 2px 0 2px 20px;
+	margin-bottom: 5px;
+	color: #f3e9d2;
+
+}
+
+.pointOfInterestListItem p{
+
+	display: table;
+
+}
+
+.pointOfInterestListItem span{
+
+	display: table-cell;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-left: 10px;
+
+}
+
+.pointOfInterestListItem img{
+	display: table-cell;
+	width: 50px;
+	height: 50px;
+
+}
+
+
+/*Area show the information for that specific point of interest*/
+.mapAndMarkerInformation {
+	padding: 0;
+	width: 60%;
+	min-height: 100%;
+	float: left;
+}
+
+
+/*div around the map area */
+
+.mapArea {
+	height: 300px;
+	width: 100%;
+}
+
+
+/*where the map load in */
+
+#map {
+	height: 100%;
+}
+
+
+/*Contain the marker info like images, difficutlty, favourites and image */
+
+.markerInfoArea {
+	height: 350px;
+	overflow: hidden;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+
+/*The name of the poi */
+
+#TitleOfPOI {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+/*The title of point of interest */
+
+.markerInfoArea h2 {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*containthe main img */
+
+.singleImage {
+	height: 220px;
+	width: 48%;
+	float: left;
+}
+
+
+/*the image */
+
+.singleImage img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Contain the marker informations  */
+
+.markerInfo {
+	height: 100%;
+	width: 48%;
+	float: left;
+	margin-left: 10px;
+}
+
+
+/*Contain the difficulty of the marker */
+
+.markerDifficult {
+	overflow: auto;
+}
+
+.markerDifficult h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+.markerDifficult img {
+	width: 100px;
+	height: 50%;
+	margin-left: 53px;
+}
+
+
+/*Contain the favourite of the marker */
+
+.markerFavourite {
+	overflow: hidden;
+}
+
+
+/*favourite text */
+.markerFavourite h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+
+/*favourite image */
+.markerFavourite img {
+	width: 100px;
+	height: 50%;
+	margin-left: 30px;
+}
+
+
+/*Contain the points */
+.markerPoints {
+
+	overflow: hidden;
+
+}
+
+#markerPointText {
+
+	margin-left: 65px;
+
+}
+
+/*marker text */
+.markerPoints h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+
+/*reward area */
+.rewardType {
+	text-align: center;
+	background-color: #1a936f;
+	color: #f3e9d2;
+	border-radius: 19px;
+}
+
+
+/*reward heading */
+.rewardType h4 {
+
+	margin-top: 10px;
+	padding: 0;
+
+}
+
+
+/*reward paragraph */
+
+.rewardType p {
+	margin-top: -10px;
+	padding: 6px 4px;
+
+}
+
+
+/*contain the play button */
+
+.buttonArea {
+	padding: 0;
+	margin: 0;
+	clear: both;
+
+}
+
+
+/*the play game button */
+.buttonArea a  {
+	float: right;
+	margin-top: -10px;
+
+}
+
+.buttonArea .ui-btn {
+
+	background-color: #114c5f;
+	color: #f3e9d2;
+
+}
+
+/** This is the game area **/
+
+#playgame1-page .ui-content {
+	padding: 0 !important;
+	min-height: 100%;
+	margin-top: -60px;
+	overflow: hidden;
+}
+
+
+/*Area where the list of POI will be display */
+.gameInfo {
+	padding: 0;
+	margin-top: 59px;
+	margin-right: 0;
+	width: 50%;
+	min-height: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.gameInfo .ui-btn{
+
+	background-color: #114c5f;
+	color: #f3e9d2;
+
+}
+
+/*Area show the information for that specific point of interest*/
+.gamePlayArea {
+	height: 600px;
+	padding: 0;
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 1%;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+/*Display game difficulty */
+.gameDifficult {
+	overflow: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.gameDifficult h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+.gameDifficult img {
+	width: 100px;
+	height: 50%;
+	margin-left: 15px;
+}
+
+/*div around the map area */
+.gameMapArea {
+	height: 300px;
+	width: 100%;
+}
+
+.gameButtonArea{
+
+	width: 100%;
+	display: table;
+	margin-left: 20px;
+}
+
+/*favourite and booking button in the game page */
+.favouriteAndBook{
+
+	display: table-row;
+
+}
+
+.favouriteAndBook a{
+
+	width: 130px;
+
+}
+
+.favouriteAndBook button{
+
+	width: 160px;
+
+}
+
+.prizeButtonArea {
+
+	margin-top: 20px;
+	margin-bottom: 5px;
+
+}
+
+.prizeButtonArea p {
+
+	border: 1px solid #f3e9d2;
+	padding: 14px 14px;
+	overflow: auto;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #f3e9d2;
+}
+
+.prizeButtonArea a{
+
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+
+
+/*where the map load in */
+#gameMap {
+	height: 100%;
+}
+
+
+/*Image gallery area*/
+
+.gameGalleryArea {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0;
+}
+
+
+/*help popup content */
+
+.popupContent {
+	width: 800px;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*The area of the popup */
+
+.helpContent {
+	width: 800px;
+	height: 600px;
+	background-color: #1a936f;
+}
+
+.helpContent table {
+	height: 370px;
+	padding: 20px 20px;
+}
+
+.helpContent img {
+	width: 225px;
+	height: 150px;
+}
+
+.helpContent table {
+	table-layout: fixed;
+}
+
+.helpContent td {
+	width: 33%;
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/*Each part of the step popip content*/
+.stepTitle {
+	text-align: right;
+}
+
+.stepExplain {
+	text-align: left;
+}
+
+.stepPicture {
+	text-align: center;
+}
+
+.stepTitleText {
+	font-weight: bold;
+	color: #f3e9d2;
+}
+
+
+/*Layout for the title of the game page */
+.gamepageTitle {
+	width: 100%;
+	position: relative;
+}
+
+.gamepageTitle h3 {
+	float: left;
+	padding: 10px 12px;
+	background-color: #1a936f;
+}
+
+.gamepageTitle .ui-btn{
+	float: right;
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+.gameGalleryArea {
+	clear: both;
+	position: relative;
+}
+
+/*puzzle area layout */
+.puzzleCollapsible img{
+
+	display: table-cell;
+	vertical-align: middle;
+	width: 50px;
+	height: 35px;
+	margin-right: 20px;
+
+}
+
+.puzzleArea .ui-collapsible-heading-toggle {
+
+	background-color: #114c5f !important;
+	color: #f3e9d2 !important;
+}
+
+.puzzleArea .ui-btn{
+
+	background-color: #114c5f;
+	color: #f3e9d2;
+}
+
+.puzzleArea .ui-collapsible-content {
+
+	background-color: #f3e9d2;
+
+}
+
+.puzzleArea .ui-field-contain {
+
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+
+.puzzleArea button{
+
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+
+/** Favourite Area **/
+#favourites-page .ui-content {
+	padding: 0 !important;
+	min-height: 100%;
+	margin-top: -60px;
+}
+
+
+/*Area where the list of POI will be display */
+.favPointOfInterestArea {
+
+	margin-top: 43px;
+	padding-top: 10px;
+	margin-right: 0;
+	width: 40%;
+	min-height: 100%;
+	float: left;
+	background-color: #f3e9d2;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#displayFavourite {
+
+	margin: 0;
+	padding: 0;
+}
+
+#favpointOfInterestList {
+
+	list-style-type: none;
+	padding: 0;
+
+
+}
+
+.favpointOfInterestListItem {
+
+	background-color: #114c5f;
+	padding: 2px 0 2px 20px;
+	margin-bottom: 5px;
+	color: #f3e9d2;
+
+}
+
+.favpointOfInterestListItem p{
+
+	display: table;
+
+}
+
+.favpointOfInterestListItem span{
+
+	display: table-cell;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-left: 10px;
+
+}
+
+.favpointOfInterestListItem img{
+	display: table-cell;
+	width: 50px;
+	height: 50px;
+
+}
+
+
+/*Area show the information for that specific point of interest*/
+.favmapAndMarkerInformation {
+	padding: 0;
+	width: 60%;
+	min-height: 100%;
+	float: left;
+}
+
+
+/*div around the map area */
+
+.favmapArea {
+	height: 260px;
+	width: 100%;
+}
+
+
+/*where the map load in */
+
+#favMap {
+	height: 100%;
+}
+
+
+/*Contain the marker info like images, difficutlty, favourites and image */
+
+.favmarkerInfoArea {
+	height: 280px;
+	overflow: hidden;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 0;
+}
+
+
+/*The name of the poi */
+
+#favTitleOfPOI {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+/*The title of point of interest */
+
+.favmarkerInfoArea h2 {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*containthe main img */
+
+.favsingleImage {
+	height: 220px;
+	width: 48%;
+	float: left;
+}
+
+
+/*the image */
+.favsingleImage img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Contain the marker informations  */
+
+.favmarkerInfo {
+	height: 100%;
+	width: 48%;
+	float: left;
+	margin-left: 10px;
+}
+
+
+/*Contain the difficulty of the marker */
+
+.favmarkerDifficult {
+	overflow: auto;
+}
+
+.favmarkerDifficult h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+.favmarkerDifficult img {
+	width: 100px;
+	height: 50%;
+	margin-left: 53px;
+}
+
+
+/*Contain the favourite of the marker */
+
+.favmarkerFavourite {
+	overflow: hidden;
+}
+
+
+/*favourite text */
+.favmarkerFavourite h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+
+/*favourite image */
+.favmarkerFavourite img {
+	width: 100px;
+	height: 50%;
+	margin-left: 30px;
+}
+
+
+/*Contain the points */
+.favmarkerPoints {
+
+	overflow: hidden;
+
+}
+
+#favmarkerPointText {
+
+	margin-left: 65px;
+
+}
+
+/*marker text */
+.favmarkerPoints h3 {
+	float: left;
+	padding: 5px 6px;
+	margin: 0;
+}
+
+
+/*reward area */
+.favrewardType {
+	text-align: center;
+	background-color: #1a936f;
+	color: #f3e9d2;
+	border-radius: 19px;
+}
+
+
+/*reward heading */
+.favrewardType h4 {
+
+	margin-top: 10px;
+	padding: 0;
+
+}
+
+
+/*reward paragraph */
+.favrewardType p {
+	margin-top: -10px;
+	padding: 6px 4px;
+
+}
+
+
+/*contain the play button */
+.favButtonArea {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	clear: both;
+
+}
+
+
+/*the play game button */
+.favButtonArea {
+
+	display: table;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+.favButtonArea p{
+
+	display: table-cell;
+	text-align: center;
+    vertical-align: middle;
+
+}
+
+.favButtonArea span{
+
+	padding: 8px 8px;
+	background-color: #1a936f;
+	color: #f3e9d2;
+}
+
+.favButtonArea a {
+
+	display: table-cell;
+	width: 30px;
+
+}
+
+.favButtonArea .ui-btn:first-child {
+
+	background-color: red;
+
+}
+.favButtonArea .ui-btn {
+
+	background-color: #114c5f;
+	color: #f3e9d2;
+
+}
+
+/*booking Css */
+.bookingArea {
+	margin-top: 50px;
+	width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+
+}
+
+.bookingArea label span{
+
+	margin-right: 60px;
+
+}
+
+#payBtn {
+
+	background-color: #114c5f;
+	color: #f3e9d2;
+
+}

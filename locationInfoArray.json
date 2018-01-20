@@ -1,0 +1,15 @@
+{
+	"locations": [
+		{
+			"id": "location1",
+			"name": "SS Great Britain",
+			"picture": "Images/Content/POI/SSGreat/image1.jpg",
+			"difficulty": "Images/Icon/rating/3star.png",
+			"favourite": "Images/Icon/rating/heartRating5.png",
+			"points": "20",
+			"reward":"20% Off at the gift shop",
+			"gamepage": "#playgame1-page"
+		}
+
+	]
+}

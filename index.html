@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>jQuery Mobile Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Mobile jQuery-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<script src="js/mobileOverideScript.js"></script>
+
+	<!-- Custom script -->
+	<script type="text/javascript" src="js/EmailJQ.js"></script>
+
+	<!-- slick plugin css -->
+	<link rel="stylesheet" type="text/css" href="css/plugincss/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/plugincss/slick/slick-theme.css" />
+
+	<!-- swipebox plugin css-->
+	<link rel="stylesheet"  type="text/css" href="css/plugincss/swipebox/swipebox.css">
+	<link rel="stylesheet" type="text/css" href="css/plugincss/slicklightbox/slick-lightbox.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/Main-css.css"/>
+
+</head>
+
+<body>
+
+	<!-- ||Starting Page|| -->
+	<div data-role="page" id="home-page">
+
+		<!-- header content -->
+		<div data-role="header">
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="startpage-container">
+
+				<!-- placement of Voyage logo -->
+				<img src="Images/Logo/mainLogo.png" alt="Voyage Main Logo">
+
+				<!-- The content area of the main page menu button with SWTrain image -->
+				<div class="menubutton">
+
+					<div class="ui-grid-solo">
+						<div class="ui-block-a"><a href="#searchGame-page" class="ui-btn">Play Game</a></div>
+					</div>
+
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><a href="#login-page" class="ui-btn" style="background-color:  #114c5f;">Login </a></div>
+						<div class="ui-block-b"><a href="#register-page" class="ui-btn">Register </a></div>
+					</div>
+
+					<img src="Images/Logo/southwestTrain.png" alt="South West Train Logo">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||Newsletter Page|| -->
+	<div data-role="page" id="newsletter-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn ui-btn-left"><img src="Images/Icon/back.png" alt="back image"></a>
+
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Newsletter</h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="newsletterpage-container">
+
+
+				<!-- A grid layout 2 column-->
+				<div class="ui-grid-a">
+
+					<div class="ui-block-a"><img src="Images/Content/help/treasurechestimg.jpg" alt="treasure picture"></div>
+
+					<div class="ui-block-b">
+
+						<div class="newsletter-maincontent">
+							<h2>It's raining Points!</h2><span>18th November 2016</span>
+							<p>This week you will get extra 20 points for each of the trasures that you manage to complete. Get hunting!.</p>
+							<a href="#sendtoemailPopup" data-rel="popup" data-position-to="window" class="ui-btn" data-transition="pop">Send To Email</a>
+						</div>
+						<!-- This is the pop up of the email-->
+						<div data-role="popup" id="sendtoemailPopup" data-dismissible="false">
+
+							<form>
+
+								<div class="sendEmail-popup">
+
+									<h3>Please enter your email:</h3>
+									<p>Error Message</p>
+
+									<input type="text" name="user" value="" placeholder="email@email.com" id="newsletterInputEmail">
+									<a href="#" class="ui-btn ui-btn-inline" id="newsletterCancelEmail" data-rel="back">Cancel </a>
+									<a href="#" class="ui-btn ui-btn-inline" id="newsletterSendEmail">Send</a>
+
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- A grid layout 3 column-->
+				<div class="ui-grid-b">
+					<div class="ui-block-a"><img src="Images/Content/POI/Bristol_Zool.jpg" alt="Bristol Zoo picture">
+						<h4 class="titlenewsletter-sub">New Treasure Hunting Location</h4>
+						<p class="newsletter-sub">22nd October 2016</p>
+					</div>
+
+					<div class="ui-block-b"><img src="Images/Content/POI/Cabot_Tower.jpg" alt="Cabot Tower picture">
+						<h4 class="titlenewsletter-sub">New Treasure Hunting Location</h4>
+						<p class="newsletter-sub">22nd October 2016</p>
+					</div>
+
+					<div class="ui-block-c"><img src="Images/Content/POI/SS_Great_Britain.jpg" alt="SS Greate Britain picture">
+						<h4 class="titlenewsletter-sub">New Treasure Hunting Location</h4>
+						<p class="newsletter-sub">22nd October 2016</p>
+					</div>
+				</div>
+				<!-- /grid-b -->
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||Login Page|| -->
+	<div data-role="page" id="login-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Login </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="loginpage-container">
+
+				<form>
+
+					<label for="usernametext">Username</label>
+					<input type="text" name="usernametext" id="usernametext" value="" placeholder="username">
+					<label for="passwordtext" class="lgSecondLabel">Password</label>
+					<input type="text" name="passwordtext" id="passwordtext" value="" placeholder="password">
+
+				</form>
+
+				<a href="#" class="ui-btn">Login</a>
+
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" class="ui-btn-active ui-state-persist" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||Register Page|| -->
+	<div data-role="page" id="register-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Register </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="registerpage-container">
+
+				<form method="post">
+
+					<div class="ui-field-contain">
+						<label for="username">Username </label>
+						<input type="text" name="username" id="username" placeholder="User Name">
+					</div>
+
+					<div class="ui-field-contain">
+						<label for="password">Password </label>
+						<input type="text" name="password" id="password">
+					</div>
+
+					<div class="ui-field-contain">
+						<label for="repassword">Re-Password </label>
+						<input type="text" name="repassword" id="repassword">
+					</div>
+
+					<div class="ui-field-contain">
+						<label for="firstname">First Name </label>
+						<input type="text" name="firstname" id="firstname">
+					</div>
+
+					<div class="ui-field-contain">
+						<label for="lastname">Last Name </label>
+						<input type="text" name="lastname" id="lastname">
+					</div>
+
+					<div class="ui-field-contain">
+						<label for="email">E-mail </label>
+						<input type="text" name="email" id="email">
+					</div>
+
+				</form>
+
+				<a href="#" class="ui-btn">Register</a>
+
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||About us Page|| -->
+	<div data-role="page" id="aboutus-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>About Us </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="aboutus-container">
+
+				<!-- placement of Voyage logo -->
+				<img src="Images/Logo/mainLogo.png" alt="Voyage Main Logo">
+
+				<p><b>Hello Adventurers</b></p>
+				<p><b>We are Voyage. We are the treasure keepers.</b></p>
+				<p>We were employed by the SouthWestTrain company to keep thier treasures!
+					<br> Unfortunately during one of our journey of transporting the treasure to the south west of england, a group traitor was trying to steal all the treasure for themselves. We desperately fought back and manage to subdued the traitor bu during our struggle all the treasure was lost.
+				</p>
+
+				<p><b>Help us collect the treasure by going to each POI and comple the puzzles, we will reward you greatly for your services</b></p>
+				<p><b>Get Hunting</b></p>
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||Account Page|| -->
+	<div data-role="page" id="account-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Account </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+			<!-- Contain all the content of the main page -->
+			<div class="account-container">
+
+				<div class="positioningOfScore">
+
+					<div class="scoreContent">
+
+						<h2><span>Title</span> UserName</h2>
+						<p id="noOfPoints">1000 Points</p>
+						<p id="nextRequirePoints">200 point for next title</p>
+
+					</div>
+
+				</div>
+
+				<div class="verticleLine"></div>
+
+				<div class="accountDetailPosition">
+
+					<div class="accountFormStructure">
+						<h3>Account Details</h3>
+
+						<form method="post">
+
+							<div class="ui-field-contain">
+								<label for="accountFName">FirstName</label>
+								<input class="disableInput" type="text" name="accountFName" id="accountFName" disabled>
+							</div>
+
+							<div class="ui-field-contain">
+								<label for="accountSName">Surname </label>
+								<input type="text" name="accountSName" id="accountSName" disabled>
+							</div>
+
+							<div class="ui-field-contain">
+								<label for="accountUserName">Username </label>
+								<input type="text" name="accountUserName" id="accountUserName" disabled>
+							</div>
+
+							<div class="ui-field-contain">
+								<label for="accountPassword">Password </label>
+								<input type="text" name="accountPassword" id="accountPassword" disabled>
+							</div>
+
+							<div class="ui-field-contain">
+								<label for="accountEmail">Email</label>
+								<input type="text" name="accountEmail" id="accountEmail" disabled>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /page -->
+
+	<!-- ||Game search Page|| -->
+	<div data-role="page" id="searchGame-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Treasure </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+
+			<!--  Point of interest List-->
+			<div class="pointOfInterestArea">
+
+
+
+				<div id="displayListOfPOI">
+
+
+
+				</div>
+
+			</div>
+
+			<div class="mapAndMarkerInformation">
+
+
+
+				<div class="mapArea">
+
+					<div id="map"></div>
+
+				</div>
+				<div class="markerInfoArea">
+
+					<h2 id="TitleOfPOI">Title of POI</h2>
+
+					<div class="singleImage">
+
+						<img src="http://placehold.it/120x120&text=image1">
+
+					</div>
+
+					<div class="markerInfo">
+
+						<div class="markerDifficult">
+							<h3>Difficult: <img src="Images/Icon/Rating/5star.png"></h3>
+						</div>
+						<div class="markerFavourite">
+							<h3>Favourites: <img src="Images/Icon/Rating/heartRating5.png"></h3>
+						</div>
+						<div class="markerPoints">
+
+							<h3>Points:  <span id="markerPointText">25 Points</span></h3>
+
+						</div>
+
+						<div class="rewardType">
+
+							<h4>Treasure Reward</h4>
+							<p id="rewards">This is where you can see what type of reward you will get after you have complete the puzzles</p>
+
+						</div>
+
+						<div class="buttonArea">
+
+							<a href="#" class="ui-btn">Play Game</a>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- ||Favourite Page|| -->
+	<div data-role="page" id="favourites-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1>Treasure </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+
+			<!--  Point of interest List-->
+			<div class="favPointOfInterestArea">
+
+
+
+				<div id="displayFavourite">
+
+				</div>
+
+			</div>
+
+			<div class="favmapAndMarkerInformation">
+
+				<div class="favmapArea">
+
+					<div id="favMap"></div>
+
+				</div>
+				<div class="favmarkerInfoArea">
+
+					<h2 id="favTitleOfPOI">Title of POI</h2>
+
+					<div class="favsingleImage">
+
+						<img src="http://placehold.it/120x120&text=image2">
+
+					</div>
+
+					<div class="favmarkerInfo">
+
+						<div class="favmarkerDifficult">
+							<h3>Difficult: <img src="Images/Icon/Rating/5star.png"></h3>
+						</div>
+						<div class="favmarkerFavourite">
+							<h3>Favourites: <img src="Images/Icon/Rating/heartRating5.png"></h3>
+						</div>
+						<div class="favmarkerPoints">
+
+							<h3>Points:  <span id="favmarkerPointText">25 Points</span></h3>
+
+						</div>
+
+						<div class="favrewardType">
+
+							<h4>Treasure Reward</h4>
+							<p id="favRewards">This is where you can see what type of reward you will get after you have complete the puzzles</p>
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<div class="favButtonArea">
+
+							<a href="#" class="ui-btn" id="favRemove">Remove</a>
+							<p> <span class="puzzleProgress">Puzzles complete  0 out of 2</span></p>
+							<a href="#" class="ui-btn" id="favPlay">Play Game</a>
+
+
+					</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true" ><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- ||Booking page|| -->
+	<div data-role="page" id="booking-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1 id="titleOfPOI">Booking </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+
+			<!--  Point of interest List-->
+			<div class="bookingArea">
+
+				<h2>Ticket </h2>
+			    <div class="ui-field-contain">
+					<label for="firstname">First Name </label>
+					<input type="text" name="firstname" id="firstname" placeholder="First Name">
+				</div>
+
+				<div class="ui-field-contain">
+					<label for="Surname">Surname </label>
+					<input type="text" name="Surname" id="Surname" placeholder="Surname">
+				</div>
+
+				<div class="ui-field-contain">
+					<label for="email">Email </label>
+					<input type="text" name="email" id="email" placeholder="Email">
+				</div>
+				<div class="dropDownListArea">
+				<label>
+					<span>Ticket</span>
+					<select name="select-choice-mini" id="select-choice-mini" data-mini="true" data-inline="true" class="ticketSelector">
+						<option value="1" selected="selected">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						</select>
+				</label>
+
+				</div>
+
+				<div class="priceArea">
+					<h3>Total Amount: <span id="totalAmount"></span></h3>
+				</div>
+				<button id="payBtn">Purchase</button>
+
+				</div>
+			</div>
+
+
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true" ><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- ||Game Page 1|| -->
+	<div data-role="page" id="playgame1-page">
+
+		<!-- header content -->
+		<div data-role="header" class="headerStyle">
+
+			<a href="index.html" data-rel="back" class="ui-btn"><img src="Images/Icon/back.png" alt="back image"></a>
+			<div data-type="horizontal" class="ui-btn-right">
+				<h1 id="titleOfPOI">Title </h1>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div role="main" class="ui-content">
+
+
+			<!--  Point of interest List-->
+			<div class="gameInfo">
+
+				<div class="gameDifficult">
+					<h3>Difficult: <img src="Images/Icon/Rating/5star.png"></h3>
+				</div>
+
+				<div class="gameMapArea">
+
+					<div id="gameMap"></div>
+
+				</div>
+
+				<div class="gameButtonArea">
+
+					<div class="prizeButtonArea">
+
+						<a href="#" class="ui-btn">Claim Prize</a>
+						<p>Puzzle Progress 0/2</p>
+
+					</div>
+
+					<div class="favouriteAndBook">
+						<button class="ui-btn" id="addFavouriteBtnLoc1">Add Favourite</button>
+					</div>
+					<div class="favouriteAndBook">
+						<a href="#" class="ui-btn">Book </a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="gamePlayArea">
+
+				<div class="gamepageTitle">
+
+					<h3>Game Start</h3>
+
+					<a href="#helpPopup" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Help</a>
+
+				</div>
+				<div data-role="popup" id="helpPopup" class="ui-content popupContent" data-overlay-theme="b">
+
+
+					<div class="helpContent">
+						<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<table>
+							<tr>
+								<td class="stepTitle">
+									<p><span class="stepTitleText">Step1</span>
+										<br> Choose a point of interest </p>
+								</td>
+								<td class="stepPicture">
+									<img src="Images/Content/Help/help.png" alt="help image 1">
+								</td>
+								<td class="stepExplain">
+									<p>You will be able to see the difficulty level and the rating of the treasure hunt</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="stepTitle">
+									<p><span class="stepTitleText">Step2</span>
+										<br> Complete the puzzles </p>
+								</td>
+								<td class="stepPicture">
+									<img src="Images/Content/Help/help1.png" alt="help image 2">
+								</td>
+								<td class="stepExplain">
+									<p>Once a POI is chosen, you will be able to view all the puzzles, hints are given if you are stuck!</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="stepTitle">
+									<p><span class="stepTitleText">Step3</span>
+										<br> Claim Your reward </p>
+								</td>
+								<td class="stepPicture">
+									<img src="Images/Content/Help/treasurechestimg.jpg" alt="treasure chest Image">
+								</td>
+								<td class="stepExplain">
+									<p>You will be able to see the difficulty level and the rating of the treasure hunt</p>
+								</td>
+							</tr>
+							<tr>
+
+								<td colspan="3">
+									<p class="stepTitleText" style="text-align: center;">If the points of interest requires tickets or booking beforehand, our web application also provides you the option to do so.</p>
+								</td>
+
+							</tr>
+
+							<td></td>
+
+
+						</table>
+
+					</div>
+				</div>
+
+
+				<div class="gameGalleryArea">
+
+					<div class="slickArea">
+						<div>
+							<a href="Img/img1.png" class="swipebox" title="My Caption"><img src="Images/Content/POI/SSGreat/image1.jpg" style="width: 140px; height:90px;"></a>
+						</div>
+						<div>
+							<a href="Img/img2.jpg" class="swipebox" title="My Caption"><img src="Images/Content/POI/SSGreat/image2.jpg" style="width: 140px; height:90px;"></a>
+						</div>
+						<div>
+							<a href="Img/img1.png" class="swipebox" title="My Caption"><img src="Images/Content/POI/SSGreat/image3.jpg" style="width: 140px; height:90px;"></a>
+						</div>
+						<div>
+							<a href="Img/img2.jpg" class="swipebox" title="My Caption"><img src="Images/Content/POI/SSGreat/image4.jpg" style="width: 140px; height:90px;"></a>
+						</div>
+						<div>
+							<a href="Img/img1.png" class="swipebox" title="My Caption"><img src="Images/Content/POI/SSGreat/image5.jpg" style="width: 140px; height:90px;"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="puzzleArea">
+
+					<p>Complete the puzzle to claim your prize</p>
+					<div class="puzzle1">
+
+						<p class="puzzleInformation1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+						<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" class="puzzleCollapsible">
+
+								<h3><img src="http://placehold.it/120x120&text=image2"><span class="puzzleTitle">Puzzle 1</span></h3>
+
+							<p class=""> Puzzle 1: Riddle <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+
+							<div class="ui-field-contain">
+								<label for="answer">Answer</label>
+								<input type="text" name="answer" id="answer" placeholder="answer" value="">
+
+
+							</div>
+
+							<button class="ui-btn">Finish</button>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer content-->
+		<div data-role="footer" data-position="fixed">
+
+			<!-- This is just a blue line -->
+			<div class="blueLine"></div>
+
+			<!-- This is the navigation bar -->
+			<div data-role="navbar" id="custom-navbar">
+
+				<ul>
+
+					<li class="nav"><img src="Images/Logo/Voyage.png" alt="sub voyage logo"></li>
+					<li class="nav">
+						<a href="#home-page" data-prefetch="true"><img src="Images/Icon/PointOfInterest-icon.png" alt="Point of Interest Logo">
+							<br>Home</a>
+					</li>
+					<li class="nav">
+						<a href="#newsletter-page" data-prefetch="true"><img src="Images/Icon/news-icon.png" alt="newsletter logo">
+							<br>Newsletter</a>
+					</li>
+					<li class="nav">
+						<a href="#favourites-page" data-prefetch="true"><img src="Images/Icon/favourite-icon.png" alt="favourites logo">
+							<br>Favourites</a>
+					</li>
+					<li class="nav">
+						<a href="#aboutus-page" data-prefetch="true"><img src="Images/Icon/aboutus-icon.png" alt="about us logo">
+							<br>About Us</a>
+					</li>
+					<li class="nav">
+						<a href="#account-page" data-prefetch="true" class="ui-btn-active ui-state-persist"><img src="Images/Icon/account-icon.png" alt="account logo">
+							<br>Acount</a>
+					</li>
+					<li class="nav">
+						<a href="#booking-page" data-prefetch="true"><img src="Images/Icon/booking-icon.png" alt="booking logo">
+							<br>My Cart</a>
+					</li>
+					<li class="nav"></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/searchGamePage.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASmKdZX0tuHysYFLXz3ckYxjDCa74u-nM&callback=initMap" async defer></script>
+	<script src="js/pluginjquery/slick/slick.js"></script>
+	<script src="js/pluginjquery/slick/slick.min.js"></script>
+	<script src="js/pluginjquery/swipebox/jquery.swipebox.js"></script>
+	<script type="text/javascript" src="js/pluginjquery/slicklightbox/slick-lightbox.js"></script>
+	<script type="text/javascript" src="js/booking.js"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script type="text/javascript">
+	</script>
+
+
+</body>
+
+</html>
